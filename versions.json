@@ -1,0 +1,64 @@
+{
+  "plugins": {
+    "SwagAPI": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagAPI-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagFishing": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagFishing-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagFarming": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagFarming-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagMenus": {
+      "version": "1.1.0",
+      "download": "https://your-delivery-url.com/SwagMenus-1.1.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagAC": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagAC-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagBounties": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagBounties-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagJobs": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagJobs-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagSlayer": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagSlayer-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagTags": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagTags-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagTournaments": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagTournaments-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "SwagCore": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/SwagCore-1.0.0.jar",
+      "checksum": "placeholder"
+    },
+    "StackPlus": {
+      "version": "1.0.0",
+      "download": "https://your-delivery-url.com/StackPlus-1.0.0.jar",
+      "checksum": "placeholder"
+    }
+  }
+}
