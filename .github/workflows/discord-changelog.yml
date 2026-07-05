@@ -154,7 +154,7 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git rm "$CHANGELOG_FILE"
             git commit -m "chore: clean up $PLUGIN changelog after Discord post"
-            git push
+            git push https://x-access-token:${{ secrets.VERSIONS_REPO_TOKEN }}@github.com/swag617/swag-versions.git main
             echo "Cleaned up $CHANGELOG_FILE"
           else
             echo "No changelog file to clean up."
