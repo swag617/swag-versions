@@ -1,0 +1,174 @@
+name: Post Changelog to Discord
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'versions.json'   # only trigger when versions.json actually changes
+
+jobs:
+  post-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout swag-versions
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # need previous commit to diff against
+
+      - name: Detect what changed
+        run: |
+          echo "=== Detecting plugin update ==="
+
+          # Primary method: read the commit message
+          # update-manifest.yml always commits as: "chore: update SwagFishing to 1.0.0"
+          COMMIT_MSG=$(git log -1 --pretty=%s)
+          echo "Commit message: $COMMIT_MSG"
+
+          PLUGIN=$(echo "$COMMIT_MSG" | grep -o 'update [A-Za-z]*' | awk '{print $2}')
+          NEW_VERSION=$(echo "$COMMIT_MSG" | grep -o 'to [0-9][^ ]*' | awk '{print $2}')
+
+          echo "From commit message — Plugin: $PLUGIN | Version: $NEW_VERSION"
+
+          # Fallback: parse diff if commit message didn't yield results
+          if [ -z "$PLUGIN" ] || [ -z "$NEW_VERSION" ]; then
+            echo "Commit message parse failed — falling back to diff detection..."
+            DIFF=$(git diff HEAD~1 HEAD -- versions.json)
+
+            # Look specifically for changed "version" lines and trace back to plugin key
+            # This works by finding the nearest plugin key above the changed version line
+            PLUGIN=$(git diff HEAD~1 HEAD -- versions.json \
+              | grep -B5 '"version"' | grep '^+' | grep -v '^+++' \
+              | grep -o '"[A-Z][A-Za-z]*"' | head -1 | tr -d '"')
+
+            NEW_VERSION=$(echo "$DIFF" | grep '^+' | grep -v '^+++' \
+              | grep '"version"' | head -1 \
+              | grep -o '"[0-9][^"]*"' | tr -d '"')
+
+            echo "From diff — Plugin: $PLUGIN | Version: $NEW_VERSION"
+          fi
+
+          echo "Final — Plugin: $PLUGIN | Version: $NEW_VERSION"
+
+          echo "PLUGIN=$PLUGIN" >> $GITHUB_ENV
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+
+          if [ -z "$PLUGIN" ] || [ -z "$NEW_VERSION" ]; then
+            echo "SKIP=true" >> $GITHUB_ENV
+            echo "Could not detect plugin or version — skipping Discord post."
+          else
+            echo "SKIP=false" >> $GITHUB_ENV
+          fi
+
+      - name: Read pre-generated changelog summary
+        if: env.SKIP == 'false'
+        run: |
+          echo "=== Reading changelog summary ==="
+          CHANGELOG_FILE="changelogs/$PLUGIN.md"
+
+          if [ -f "$CHANGELOG_FILE" ]; then
+            echo "Found pre-generated summary at $CHANGELOG_FILE"
+            SUMMARY=$(cat "$CHANGELOG_FILE")
+            echo "Summary content:"
+            echo "$SUMMARY"
+          else
+            echo "No pre-generated changelog file found at $CHANGELOG_FILE"
+            echo "Falling back to generic message."
+            SUMMARY="✨ **$PLUGIN** has been updated! Log on to check out what's new."
+          fi
+
+          echo "CHANGELOG_SUMMARY<<EOF" >> $GITHUB_ENV
+          echo "$SUMMARY" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Fetch release URL from GitHub API
+        if: env.SKIP == 'false'
+        run: |
+          echo "=== Fetching release URL ==="
+
+          RELEASE_DATA=$(curl -s \
+            -H "Authorization: token ${{ secrets.VERSIONS_REPO_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/swag617/$PLUGIN/releases/latest")
+
+          RELEASE_URL=$(echo "$RELEASE_DATA" | jq -r '.html_url // ""')
+          echo "Release URL: $RELEASE_URL"
+          echo "RELEASE_URL=$RELEASE_URL" >> $GITHUB_ENV
+
+      - name: Post to Discord
+        if: env.SKIP == 'false'
+        run: |
+          echo "=== Posting to Discord ==="
+
+          # Per-plugin embed color for visual variety in the changelog channel
+          case "$PLUGIN" in
+            SwagFishing)     COLOR=5814783  ;;   # blue
+            SwagFarming)     COLOR=3066993  ;;   # green
+            SwagMenus)       COLOR=10181046 ;;   # purple
+            SwagAC)          COLOR=15158332 ;;   # red
+            SwagBounties)    COLOR=15844367 ;;   # gold
+            SwagJobs)        COLOR=1752220  ;;   # teal
+            SwagSlayer)      COLOR=10038562 ;;   # dark grey
+            SwagTags)        COLOR=15105570 ;;   # orange
+            SwagTournaments) COLOR=15844367 ;;   # gold
+            SwagCore)        COLOR=5793266  ;;   # blurple
+            SwagAPI)         COLOR=5793266  ;;   # blurple
+            StackPlus)       COLOR=3066993  ;;   # green
+            *)               COLOR=5814783  ;;   # default blue
+          esac
+
+          echo "Using color: $COLOR for plugin: $PLUGIN"
+
+          PAYLOAD=$(jq -n \
+            --arg title "🔧 $PLUGIN has been updated!" \
+            --arg description "$CHANGELOG_SUMMARY" \
+            --arg url "$RELEASE_URL" \
+            --argjson color "$COLOR" \
+            '{
+              embeds: [{
+                title: $title,
+                description: $description,
+                color: $color,
+                url: $url,
+                footer: {
+                  text: "FleaMC • Changelog"
+                },
+                timestamp: (now | todate)
+              }]
+            }')
+
+          echo "Payload:"
+          echo "$PAYLOAD" | jq '.'
+
+          HTTP_STATUS=$(curl -s -o response.txt -w "%{http_code}" \
+            -X POST "${{ secrets.DISCORD_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD")
+
+          echo "Discord webhook HTTP status: $HTTP_STATUS"
+          echo "Discord response body:"
+          cat response.txt
+
+          if [ "$HTTP_STATUS" = "204" ] || [ "$HTTP_STATUS" = "200" ]; then
+            echo "Successfully posted to Discord."
+          else
+            echo "Discord webhook returned HTTP $HTTP_STATUS — post may have failed."
+            exit 1
+          fi
+
+      - name: Clean up changelog file after posting
+        if: env.SKIP == 'false'
+        run: |
+          echo "=== Cleaning up changelog file ==="
+          CHANGELOG_FILE="changelogs/$PLUGIN.md"
+
+          if [ -f "$CHANGELOG_FILE" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git rm "$CHANGELOG_FILE"
+            git commit -m "chore: clean up $PLUGIN changelog after Discord post"
+            git push
+            echo "Cleaned up $CHANGELOG_FILE"
+          else
+            echo "No changelog file to clean up."
+          fi
