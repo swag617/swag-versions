@@ -35,8 +35,6 @@ jobs:
             echo "Commit message parse failed — falling back to diff detection..."
             DIFF=$(git diff HEAD~1 HEAD -- versions.json)
 
-            # Look specifically for changed "version" lines and trace back to plugin key
-            # This works by finding the nearest plugin key above the changed version line
             PLUGIN=$(git diff HEAD~1 HEAD -- versions.json \
               | grep -B5 '"version"' | grep '^+' | grep -v '^+++' \
               | grep -o '"[A-Z][A-Za-z]*"' | head -1 | tr -d '"')
@@ -81,20 +79,6 @@ jobs:
           echo "$SUMMARY" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
-      - name: Fetch release URL from GitHub API
-        if: env.SKIP == 'false'
-        run: |
-          echo "=== Fetching release URL ==="
-
-          RELEASE_DATA=$(curl -s \
-            -H "Authorization: token ${{ secrets.VERSIONS_REPO_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/swag617/$PLUGIN/releases/latest")
-
-          RELEASE_URL=$(echo "$RELEASE_DATA" | jq -r '.html_url // ""')
-          echo "Release URL: $RELEASE_URL"
-          echo "RELEASE_URL=$RELEASE_URL" >> $GITHUB_ENV
-
       - name: Post to Discord
         if: env.SKIP == 'false'
         run: |
@@ -119,17 +103,20 @@ jobs:
 
           echo "Using color: $COLOR for plugin: $PLUGIN"
 
+          # NOTE: No "url" field on the embed — this keeps the title as plain text
+          # and ensures all changelog content is visible directly in the message.
+          # Adding a url would turn the title into a hyperlink and hide content
+          # behind a "click to view" pattern which players unfamiliar with GitHub
+          # would find confusing.
           PAYLOAD=$(jq -n \
             --arg title "🔧 $PLUGIN has been updated!" \
             --arg description "$CHANGELOG_SUMMARY" \
-            --arg url "$RELEASE_URL" \
             --argjson color "$COLOR" \
             '{
               embeds: [{
                 title: $title,
                 description: $description,
                 color: $color,
-                url: $url,
                 footer: {
                   text: "FleaMC • Changelog"
                 },
