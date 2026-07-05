@@ -7,8 +7,8 @@
     },
     "SwagFishing": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagFishing-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagFishing/releases/assets/467253192",
+      "checksum": "5168e9a6c5471dcc9cc73a23e3f2ae5ec2cb76645e9610a59a0ddd45a68dc768"
     },
     "SwagFarming": {
       "version": "1.0.0",
