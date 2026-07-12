@@ -52,8 +52,8 @@
     },
     "SwagCore": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagCore-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagCore/releases/assets/474586756",
+      "checksum": "e7bb314ab789d684bbf0a38b6cf7b7186697161db1050aa57c9beb58c2bdc744"
     },
     "StackPlus": {
       "version": "1.0.0",
