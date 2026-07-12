@@ -22,8 +22,8 @@
     },
     "SwagAC": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagAC-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagAC/releases/assets/474586876",
+      "checksum": "916aeb3e422ed36cfaef6fd6cba4333f3026ca9a6c03b0b025bbb36932af5bbb"
     },
     "SwagBounties": {
       "version": "1.0.0",
