@@ -47,8 +47,8 @@
     },
     "SwagTournaments": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagTournaments-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagTournaments/releases/assets/474587917",
+      "checksum": "2ed7706a50514568bb6a34ed627ede426004630683e3a082bd6204245a7a576d"
     },
     "SwagCore": {
       "version": "1.0.0",
