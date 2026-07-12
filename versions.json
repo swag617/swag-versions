@@ -16,9 +16,9 @@
       "checksum": "f8c0e5b2263483f186f7a3d24a6d2810abe609742663cf759987a60715a64f1d"
     },
     "SwagMenus": {
-      "version": "1.1.0",
-      "download": "https://your-delivery-url.com/SwagMenus-1.1.0.jar",
-      "checksum": "placeholder"
+      "version": "1.1.1",
+      "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/474588444",
+      "checksum": "77c9f438f5b67b8b1c0be567e47150f2f2b4650ef3093e8f905adc91187f1df7"
     },
     "SwagAC": {
       "version": "1.0.0",
