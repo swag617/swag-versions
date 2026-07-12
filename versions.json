@@ -37,8 +37,8 @@
     },
     "SwagSlayer": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagSlayer-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagSlayer/releases/assets/474588002",
+      "checksum": "c488c79cd15a1263b2424a10b4dfd938bb476767c51cc23ee7f570a38d5a5d04"
     },
     "SwagTags": {
       "version": "1.0.0",
