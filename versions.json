@@ -12,8 +12,8 @@
     },
     "SwagFarming": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagFarming-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagFarming/releases/assets/474587458",
+      "checksum": "f8c0e5b2263483f186f7a3d24a6d2810abe609742663cf759987a60715a64f1d"
     },
     "SwagMenus": {
       "version": "1.1.0",
