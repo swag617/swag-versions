@@ -2,8 +2,8 @@
   "plugins": {
     "SwagAPI": {
       "version": "1.0.0",
-      "download": "https://your-delivery-url.com/SwagAPI-1.0.0.jar",
-      "checksum": "placeholder"
+      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/474578469",
+      "checksum": "bea36e271ba316f70ae8668be2e0d4fb60917824dc7c1c1d94c1edffa61f3885"
     },
     "SwagFishing": {
       "version": "1.0.0",
