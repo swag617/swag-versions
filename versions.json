@@ -69,6 +69,11 @@
       "version": "2.1.0",
       "download": "https://api.github.com/repos/swag617/SwagRestartScheduler/releases/assets/475824226",
       "checksum": "b909cf34736b1402438ffba9c433a8ce818131aebeb208ffc4e1b825443e85c0"
+    },
+    "SwagWeather": {
+      "version": "1.0.0",
+      "download": "https://api.github.com/repos/swag617/SwagWeather/releases/assets/475910632",
+      "checksum": "2774ef4d0e67a291cb62f39844768ac361fec253e52b56e73733f7bc28d86d4c"
     }
   }
 }
