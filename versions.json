@@ -21,9 +21,9 @@
       "checksum": "77c9f438f5b67b8b1c0be567e47150f2f2b4650ef3093e8f905adc91187f1df7"
     },
     "SwagAC": {
-      "version": "1.0.0",
-      "download": "https://api.github.com/repos/swag617/SwagAC/releases/assets/474586876",
-      "checksum": "916aeb3e422ed36cfaef6fd6cba4333f3026ca9a6c03b0b025bbb36932af5bbb"
+      "version": "2.1.0",
+      "download": "https://api.github.com/repos/swag617/SwagAC/releases/assets/475981429",
+      "checksum": "dd512a8d4258b1ef9f1cebbc7aad73c52f471a46ca0e2a4fc089e9ef39925f60"
     },
     "SwagBounties": {
       "version": "1.0.0",
