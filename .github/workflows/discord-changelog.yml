@@ -6,6 +6,9 @@ on:
     paths:
       - 'versions.json'   # only trigger when versions.json actually changes
 
+permissions:
+  contents: write   # needed for the cleanup push below
+
 jobs:
   post-changelog:
     runs-on: ubuntu-latest
@@ -15,7 +18,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2   # need previous commit to diff against
-          token: ${{ secrets.VERSIONS_REPO_TOKEN }}   # write access, needed by the cleanup push below
+          # No cross-repo VERSIONS_REPO_TOKEN needed here — this workflow only
+          # pushes to its own repo, so the default GITHUB_TOKEN (scoped to
+          # swag-versions via the permissions block above) is sufficient.
 
       - name: Detect what changed
         run: |
