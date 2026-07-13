@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2   # need previous commit to diff against
-          persist-credentials: false   # don't let checkout's read-only token shadow VERSIONS_REPO_TOKEN below
+          token: ${{ secrets.VERSIONS_REPO_TOKEN }}   # write access, needed by the cleanup push below
 
       - name: Detect what changed
         run: |
@@ -155,7 +155,7 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git rm "$CHANGELOG_FILE"
             git commit -m "chore: clean up $PLUGIN changelog after Discord post"
-            git push https://x-access-token:${{ secrets.VERSIONS_REPO_TOKEN }}@github.com/swag617/swag-versions.git main
+            git push
             echo "Cleaned up $CHANGELOG_FILE"
           else
             echo "No changelog file to clean up."
