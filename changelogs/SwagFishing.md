@@ -1,1 +1,1 @@
-✨ **SwagFishing** has been updated! Log on to check out what's new.
+ 226 lines removed). The plugin no longer runs its own heavy web server, offloading
