@@ -76,9 +76,9 @@
       "checksum": "7e34f3020ec570e757d0f3171f327e5ae5228fdd552e24a174d1d1192e30a350"
     },
     "DiscordUtils": {
-      "version": "1.4.0",
-      "download": "https://api.github.com/repos/swag617/DiscordUtils/releases/assets/476069800",
-      "checksum": "bc5494a65c200c2e86c3f32ba9185799633482f17b176075e4d7c155b6de6dc0"
+      "version": "1.4.1",
+      "download": "https://api.github.com/repos/swag617/DiscordUtils/releases/assets/499269731",
+      "checksum": "87e59c19a59a7e4c548d2c3020b5580b180964dbf22b232d90ba4d6d7bd9e29a"
     }
   }
 }
