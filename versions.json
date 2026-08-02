@@ -26,9 +26,9 @@
       "checksum": "ee8cd97b1aa705c5a0dd42d25cc27351abb2e395f1e5dc6f10472676ab6c7da2"
     },
     "SwagBounties": {
-      "version": "1.1.0",
-      "download": "https://api.github.com/repos/swag617/SwagBounties/releases/assets/476065921",
-      "checksum": "9b7aa9690da48c8b9d371bef93f21630f5e54244c23b3609372dc207b190b832"
+      "version": "1.1.1",
+      "download": "https://api.github.com/repos/swag617/SwagBounties/releases/assets/499268533",
+      "checksum": "28d7bd6c9823f0306a185f78fe9dd8add95ece2d21a4107fcb718c513ca546ac"
     },
     "SwagJobs": {
       "version": "1.1.0",
