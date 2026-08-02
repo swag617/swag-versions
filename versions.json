@@ -16,9 +16,9 @@
       "checksum": "f27a93946dd713d36653fd804c7726e5ab25f317e38191342ccc17ae0b8d4e31"
     },
     "SwagMenus": {
-      "version": "1.1.1",
-      "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/474588444",
-      "checksum": "77c9f438f5b67b8b1c0be567e47150f2f2b4650ef3093e8f905adc91187f1df7"
+      "version": "1.1.2",
+      "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/499267114",
+      "checksum": "286e5f84fe2b75aa4367b4cd7980415fa4b1cf0b73cf7a59d446a1f3fe54424a"
     },
     "SwagAC": {
       "version": "2.2.1",
@@ -31,9 +31,9 @@
       "checksum": "28d7bd6c9823f0306a185f78fe9dd8add95ece2d21a4107fcb718c513ca546ac"
     },
     "SwagJobs": {
-      "version": "1.1.0",
-      "download": "https://api.github.com/repos/swag617/SwagJobs/releases/assets/476067257",
-      "checksum": "bb031e0a3cf4ac78b213a2bf02f31354e34297837e51ebf8a4b0634df0dd70c0"
+      "version": "1.1.1",
+      "download": "https://api.github.com/repos/swag617/SwagJobs/releases/assets/499267174",
+      "checksum": "a485e6b4ffae1767465f61e048b3527f991ac9ecc0996b7a61744a85905d55fb"
     },
     "SwagSlayer": {
       "version": "1.1.0",
@@ -41,9 +41,9 @@
       "checksum": "03d92aaf12eb52a1d4693bfdfb106fd549b68b73b70d3b33410eb6b6e13d1219"
     },
     "SwagTags": {
-      "version": "1.0.0",
-      "download": "https://api.github.com/repos/swag617/SwagTags/releases/assets/474587667",
-      "checksum": "20472e0d7fb08d5d97cb87c854122c0c5c3754fed81bf6dac946b6fe284f86dc"
+      "version": "1.0.1",
+      "download": "https://api.github.com/repos/swag617/SwagTags/releases/assets/499267152",
+      "checksum": "31a823005f7622a6e4dc17e846ee4ff0c029850489987742c748d717bb1803a1"
     },
     "SwagTournaments": {
       "version": "1.2.0",
@@ -51,14 +51,14 @@
       "checksum": "5fe3f6312b110ccc8fb8ea77c4a5f52204856eda22ac06199d3b885fee78aa3c"
     },
     "SwagCore": {
-      "version": "1.0.0",
-      "download": "https://api.github.com/repos/swag617/SwagCore/releases/assets/474586756",
-      "checksum": "e7bb314ab789d684bbf0a38b6cf7b7186697161db1050aa57c9beb58c2bdc744"
+      "version": "1.0.1",
+      "download": "https://api.github.com/repos/swag617/SwagCore/releases/assets/499267245",
+      "checksum": "568da8d30cd4ff57aeac3b1279c2ea95bcf247497a294972294a0ddeef2abbd8"
     },
     "SwagElevators": {
-      "version": "1.0.0",
-      "download": "https://api.github.com/repos/swag617/SwagElevators/releases/assets/467285122",
-      "checksum": "e5826f6515931915026c59d1e879d3cbb34a67507d3224cfa58168390e670ddc"
+      "version": "1.0.1",
+      "download": "https://api.github.com/repos/swag617/SwagElevators/releases/assets/499267106",
+      "checksum": "ab8596b9817c13a0bd1389dd3dc339a935a2e673d56e9f5ae078ad82ba6ef4f5"
     },
     "SwagStack": {
       "version": "1.0.1",
@@ -79,6 +79,11 @@
       "version": "1.4.1",
       "download": "https://api.github.com/repos/swag617/DiscordUtils/releases/assets/499269731",
       "checksum": "87e59c19a59a7e4c548d2c3020b5580b180964dbf22b232d90ba4d6d7bd9e29a"
+    },
+    "InfiniteBlocks": {
+      "version": "1.2.0",
+      "download": "https://api.github.com/repos/swag617/InfiniteBlocks/releases/assets/499267716",
+      "checksum": "3f52d8b0f37aa90ec6ebe308b903e456497989e5af467994686c2b6c4a97a8f6"
     }
   }
 }
