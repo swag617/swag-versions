@@ -61,9 +61,9 @@
       "checksum": "ab8596b9817c13a0bd1389dd3dc339a935a2e673d56e9f5ae078ad82ba6ef4f5"
     },
     "SwagStack": {
-      "version": "1.0.1",
-      "download": "https://api.github.com/repos/swag617/SwagStack/releases/assets/499268180",
-      "checksum": "9035699c6b5653c9a5cdd1e638d8c2eeff786171bcf359b5faaa9cefdd927d08"
+      "version": "1.0.2",
+      "download": "https://api.github.com/repos/swag617/SwagStack/releases/assets/499415700",
+      "checksum": "3f724b500cb2214d7185c37bd66ce056f26911cb1e28eb06f30f56d465d0bfa9"
     },
     "SwagRestartScheduler": {
       "version": "2.3.0",
