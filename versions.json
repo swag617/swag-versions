@@ -56,9 +56,9 @@
       "checksum": "f6bdc0a72c9b87b3a864362eca94f514efe53803dc7cf93364fd6747b5bd69d6"
     },
     "SwagElevators": {
-      "version": "1.0.1",
-      "download": "https://api.github.com/repos/swag617/SwagElevators/releases/assets/499267106",
-      "checksum": "ab8596b9817c13a0bd1389dd3dc339a935a2e673d56e9f5ae078ad82ba6ef4f5"
+      "version": "1.0.3",
+      "download": "https://api.github.com/repos/swag617/SwagElevators/releases/assets/524786733",
+      "checksum": "32b30d41f12aa992069281a287a72ff8ee07d830102401f1bdaed0c12f284a4e"
     },
     "SwagStack": {
       "version": "1.1.2",
