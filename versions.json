@@ -46,9 +46,9 @@
       "checksum": "31a823005f7622a6e4dc17e846ee4ff0c029850489987742c748d717bb1803a1"
     },
     "SwagTournaments": {
-      "version": "1.2.0",
-      "download": "https://api.github.com/repos/swag617/SwagTournaments/releases/assets/476069257",
-      "checksum": "5fe3f6312b110ccc8fb8ea77c4a5f52204856eda22ac06199d3b885fee78aa3c"
+      "version": "1.2.3",
+      "download": "https://api.github.com/repos/swag617/SwagTournaments/releases/assets/524780449",
+      "checksum": "b5dcf098dee8616948b5e52aed8bf84bce8a0c04238e7acc525cfa20599fc5d4"
     },
     "SwagCore": {
       "version": "1.0.22",
