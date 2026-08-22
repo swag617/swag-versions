@@ -2,7 +2,7 @@
   "plugins": {
     "SwagAPI": {
       "version": "v1.0.5",
-      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/524776815",
+      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/524782496",
       "checksum": "01db2228a14ad82c555041ae1c9690dd79ea7cc5fc45cca11dc866b8aad6f939"
     },
     "SwagFishing": {
