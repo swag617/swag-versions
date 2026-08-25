@@ -6,9 +6,9 @@
       "checksum": "01db2228a14ad82c555041ae1c9690dd79ea7cc5fc45cca11dc866b8aad6f939"
     },
     "SwagFishing": {
-      "version": "1.1.2",
-      "download": "https://api.github.com/repos/swag617/SwagFishing/releases/assets/524786690",
-      "checksum": "ab116ca16a2cb7b417ff3aa10779cd9cb7ce88e485ecdc6593023e3aa7fb1dad"
+      "version": "1.1.28",
+      "download": "https://api.github.com/repos/swag617/SwagFishing/releases/assets/528527416",
+      "checksum": "1de429bc0bd9eb7b02a732cc64305d394e9a5da192bb258ad9981deee937a911"
     },
     "SwagFarming": {
       "version": "1.2.2",
