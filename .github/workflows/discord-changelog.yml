@@ -33,13 +33,12 @@ jobs:
 
           PLUGIN=$(echo "$COMMIT_MSG" | grep -o 'update [A-Za-z]*' | awk '{print $2}')
           # Tolerate an optional leading "v" on the version (e.g. "to v1.2.27" as
-          # well as "to 1.2.27") — a GitHub release tagged "vX.Y.Z" produces
-          # exactly that commit message via update-manifest.yml's ${{ github.
-          # event.release.tag_name }}, and this regex used to require a digit
-          # immediately after "to ", silently skipping the Discord post (the
-          # step below only logs a warning, never fails the workflow) for every
-          # v-prefixed release. Strip the "v" after extracting so NEW_VERSION
-          # stays consistent either way.
+          # well as "to 1.2.27") - a GitHub release tagged vX.Y.Z produces exactly
+          # that commit message via update-manifest.yml's release tag name, and
+          # this regex used to require a digit immediately after "to ", silently
+          # skipping the Discord post (the step below only logs a warning, never
+          # fails the workflow) for every v-prefixed release. Strip the "v" after
+          # extracting so NEW_VERSION stays consistent either way.
           NEW_VERSION=$(echo "$COMMIT_MSG" | grep -oE 'to v?[0-9][^ ]*' | awk '{print $2}' | sed 's/^v//')
 
           echo "From commit message — Plugin: $PLUGIN | Version: $NEW_VERSION"
