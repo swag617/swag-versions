@@ -1,11 +1,11 @@
-Hey FleaMC fam! We’ve got some awesome behind-the-scenes upgrades coming your way to make our server look cleaner and more cohesive! ✨
+### 🚀 FleaMC Update: The Overflow & Web Editor Update! 🚀
 
-Here is what’s new:
+We’ve got some awesome new features and quality-of-life upgrades live on the server! Here is what’s new:
 
-* **Custom Chat & System Prefixes!** 💬 We can now fully customize and change the prefix tags that appear before plugin messages in chat.
-* **Sleeker Chat Designs!** 🎨 Say goodbye to old-school, clunky chat formatting. All system messages can now use modern, beautiful gradients and clean styling.
-* **Server-Wide Consistency!** 🌐 We can now set a single "global style" so every plugin message across the entire server matches FleaMC's theme perfectly.
-* **Instant Updates!** ⚡ Any changes we make to these prefixes and styles happen instantly in-game without needing laggy server reloads.
-* **Smoother Performance!** 🚀 Under-the-hood web connection upgrades mean the server communicates faster and runs even smoother than before.
+* **🎒 Introducing the Overflow Inbox!** Inventory full during a drop or reward? No more items falling on the dirty ground to be lost, stolen, or despawned! Your extra items will now be safely sent to a secure backup storage.
+* **📦 Retrieve Your Loot Anytime!** You will soon be able to claim all your backed-up, overflowed items easily using a brand-new `/overflow` menu! 
+* **🌐 Web Editor Integration!** We've added support for a new `/webeditor` command to make configuring and editing custom server setups smoother than ever.
+* **✨ Ephemeral Holograms!** Behind the scenes, we've added support for clean, temporary floating text labels that can appear and disappear dynamically without lagging the server.
+* **💾 Robust Database Saving!** Your overflowed items are instantly saved to our database, meaning your hard-earned loot is 100% safe even if the server restarts.
 
-Hop on right now to check out the fresh new look! 🎮 **play.fleamc.com**
+**Hop online right now to check out the new features and keep your inventory safe! 🎮**
