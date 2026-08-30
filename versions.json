@@ -1,10 +1,5 @@
 {
   "plugins": {
-    "SwagAPI": {
-      "version": "v1.0.9",
-      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/536612701",
-      "checksum": "28efa7f877a8542469570927fabf7425f7bc9876d6bd8ad53cdecd31a69d9f8c"
-    },
     "SwagMenus": {
       "version": "1.1.4",
       "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/524784590",
@@ -84,6 +79,11 @@
       "version": "v1.0.39",
       "download": "https://api.github.com/repos/swag617/SwagCore/releases/assets/536611866",
       "checksum": "695d5726f3541ec26c46a4b2caff36dce78552a7673203c29788dceb9e861d9f"
+    },
+    "SwagAPI": {
+      "version": "v1.0.9",
+      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/536612701",
+      "checksum": "28efa7f877a8542469570927fabf7425f7bc9876d6bd8ad53cdecd31a69d9f8c"
     }
   }
 }
