@@ -11,9 +11,9 @@
       "checksum": "1de429bc0bd9eb7b02a732cc64305d394e9a5da192bb258ad9981deee937a911"
     },
     "SwagFarming": {
-      "version": "1.2.24",
-      "download": "https://api.github.com/repos/swag617/SwagFarming/releases/assets/528528370",
-      "checksum": "ef2d78d171538e3955cfeccffe67dbf2e03a5d7b71ae2ff59e223fbbd5be9c74"
+      "version": "v1.2.27",
+      "download": "https://api.github.com/repos/swag617/SwagFarming/releases/assets/536607227",
+      "checksum": "762946cc6be83122966b315c59936661d4dee1136aff09c3f95060ba82d9a6f4"
     },
     "SwagMenus": {
       "version": "1.1.4",
