@@ -55,11 +55,6 @@
       "download": "https://api.github.com/repos/swag617/SwagElevators/releases/assets/524786733",
       "checksum": "32b30d41f12aa992069281a287a72ff8ee07d830102401f1bdaed0c12f284a4e"
     },
-    "SwagStack": {
-      "version": "v1.1.5",
-      "download": "https://api.github.com/repos/swag617/SwagStack/releases/assets/536607649",
-      "checksum": "8d2fe6105a30246c9a6fcbbf0e714d2f28d27e7690e9b1980f2b1064b0c1ecbd"
-    },
     "SwagRestartScheduler": {
       "version": "2.3.5",
       "download": "https://api.github.com/repos/swag617/SwagRestartScheduler/releases/assets/528528666",
@@ -84,6 +79,11 @@
       "version": "v1.2.27",
       "download": "https://api.github.com/repos/swag617/SwagFarming/releases/assets/536607227",
       "checksum": "762946cc6be83122966b315c59936661d4dee1136aff09c3f95060ba82d9a6f4"
+    },
+    "SwagStack": {
+      "version": "v1.1.5",
+      "download": "https://api.github.com/repos/swag617/SwagStack/releases/assets/536607649",
+      "checksum": "8d2fe6105a30246c9a6fcbbf0e714d2f28d27e7690e9b1980f2b1064b0c1ecbd"
     }
   }
 }
