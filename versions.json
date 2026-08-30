@@ -10,11 +10,6 @@
       "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/524784590",
       "checksum": "4065021bb4df8bc88d04eb699b666af2e346f01bb295abebb36a5204881316b5"
     },
-    "SwagAC": {
-      "version": "v2.4.1",
-      "download": "https://api.github.com/repos/swag617/SwagAC/releases/assets/536610938",
-      "checksum": "55b9eceb5a3b8d5e796239b0a2e36b4a9e2fd9f9608557b3cb562768e55adaa1"
-    },
     "SwagBounties": {
       "version": "1.1.3",
       "download": "https://api.github.com/repos/swag617/SwagBounties/releases/assets/524786270",
@@ -84,6 +79,11 @@
       "version": "v1.2.13",
       "download": "https://api.github.com/repos/swag617/SwagTournaments/releases/assets/536610144",
       "checksum": "a55eb3b131ce623a219595ba510bdecbc9d6e94e907e5689bde1d65154fc6c89"
+    },
+    "SwagAC": {
+      "version": "v2.4.1",
+      "download": "https://api.github.com/repos/swag617/SwagAC/releases/assets/536610938",
+      "checksum": "55b9eceb5a3b8d5e796239b0a2e36b4a9e2fd9f9608557b3cb562768e55adaa1"
     }
   }
 }
