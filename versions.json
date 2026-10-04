@@ -31,9 +31,9 @@
       "checksum": "3cedd25809b31279478147c8328897a2fd8414407883486b8f0bbd94c70825bd"
     },
     "SwagRestartScheduler": {
-      "version": "2.3.5",
-      "download": "https://api.github.com/repos/swag617/SwagRestartScheduler/releases/assets/528528666",
-      "checksum": "13b21954156724c78c85bb0db659541b8cfbba70d502dcf88614a64c6c57a3eb"
+      "version": "2.3.7",
+      "download": "https://api.github.com/repos/swag617/SwagRestartScheduler/releases/assets/610956357",
+      "checksum": "814e76843aa1fec12427307e6e9421f82e09ae58b7c213f28db4341525b3722d"
     },
     "SwagWeather": {
       "version": "1.0.3",
