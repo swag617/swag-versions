@@ -1,9 +1,9 @@
 {
   "plugins": {
     "SwagMenus": {
-      "version": "1.1.4",
-      "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/524784590",
-      "checksum": "4065021bb4df8bc88d04eb699b666af2e346f01bb295abebb36a5204881316b5"
+      "version": "1.1.6",
+      "download": "https://api.github.com/repos/swag617/SwagMenus/releases/assets/610951362",
+      "checksum": "dd3ea37550ea2a4463f242e1c3c0b7d2286617b869bb84d9581380674ac9af78"
     },
     "SwagBounties": {
       "version": "1.1.3",
