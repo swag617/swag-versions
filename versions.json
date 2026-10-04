@@ -41,9 +41,9 @@
       "checksum": "0605ab768afc36e2786e0b4d41b1612b4c3da9e083acb8f97a1814890f5904e3"
     },
     "DiscordUtils": {
-      "version": "1.4.1",
-      "download": "https://api.github.com/repos/swag617/DiscordUtils/releases/assets/499269731",
-      "checksum": "87e59c19a59a7e4c548d2c3020b5580b180964dbf22b232d90ba4d6d7bd9e29a"
+      "version": "1.4.2",
+      "download": "https://api.github.com/repos/swag617/DiscordUtils/releases/assets/610186506",
+      "checksum": "51e7dde180dcd4ca3e50aa7a692ae16d7d37f048b822d46eef495eaa229fd560"
     },
     "InfiniteBlocks": {
       "version": "1.2.0",
