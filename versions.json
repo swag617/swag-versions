@@ -36,9 +36,9 @@
       "checksum": "814e76843aa1fec12427307e6e9421f82e09ae58b7c213f28db4341525b3722d"
     },
     "SwagWeather": {
-      "version": "1.0.3",
-      "download": "https://api.github.com/repos/swag617/SwagWeather/releases/assets/524784922",
-      "checksum": "0605ab768afc36e2786e0b4d41b1612b4c3da9e083acb8f97a1814890f5904e3"
+      "version": "1.0.6",
+      "download": "https://api.github.com/repos/swag617/SwagWeather/releases/assets/610960086",
+      "checksum": "222b2b070fcdfba822a05b872f00d549e1f8ada617366139d2f2cc9e0e36844b"
     },
     "DiscordUtils": {
       "version": "1.4.2",
