@@ -16,9 +16,9 @@
       "checksum": "ab02167d0c3c29358cad733354385ef754dcb3fd78947d97204e863285470b09"
     },
     "SwagSlayer": {
-      "version": "1.1.0",
-      "download": "https://api.github.com/repos/swag617/SwagSlayer/releases/assets/476064543",
-      "checksum": "03d92aaf12eb52a1d4693bfdfb106fd549b68b73b70d3b33410eb6b6e13d1219"
+      "version": "1.1.1",
+      "download": "https://api.github.com/repos/swag617/SwagSlayer/releases/assets/610558153",
+      "checksum": "bd905f1c0166f8d6074cdc569422089672e6f87e81f5cefb4ce5aa12c1c74c15"
     },
     "SwagTags": {
       "version": "1.1.0",
