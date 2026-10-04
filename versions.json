@@ -81,9 +81,9 @@
       "checksum": "695d5726f3541ec26c46a4b2caff36dce78552a7673203c29788dceb9e861d9f"
     },
     "SwagAPI": {
-      "version": "v1.0.9",
-      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/536612701",
-      "checksum": "28efa7f877a8542469570927fabf7425f7bc9876d6bd8ad53cdecd31a69d9f8c"
+      "version": "1.0.11",
+      "download": "https://api.github.com/repos/swag617/SwagAPI/releases/assets/610552336",
+      "checksum": "1491287245fd871cbe53c6ebcf7c3c6d742c9adcef4c6ebe9a2e9c76663d883c"
     }
   }
 }
